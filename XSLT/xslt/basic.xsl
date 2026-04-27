@@ -38,6 +38,20 @@
       </div>
   </xsl:template>
   
+  <!--head with attributes-->
+  <xsl:template match="tei:head">
+      <head>
+          <xsl:apply-templates select="@*|node()"/>
+      </head>
+  </xsl:template>
+
+  <!--add with attributes-->
+  <xsl:template match="tei:add">
+      <add>
+          <xsl:apply-templates select="@*|node()"/>
+      </add>
+  </xsl:template>
+
   <!--lb to br-->
   <xsl:template match="tei:lb">
     <br>
