@@ -26,18 +26,25 @@
     </p>
   </xsl:template>
 
+  
   <xsl:template match="tei:text|tei:body">
     <xsl:apply-templates/>
   </xsl:template>
 
-
-  <!--div with attributes-->
-  <xsl:template match="tei:div">
-      <div>
-          <xsl:apply-templates select="@*|node()"/>
-      </div>
+  <!--div type section to element section-->
+  <xsl:template match="tei:div[@type='section']">
+    <p>
+      <section><xsl:apply-templates/></section>
+    </p>
   </xsl:template>
-  
+
+  <!--div type subsection to element div-->
+  <xsl:template match="tei:div[@type='subsection']">
+    <p>
+      <div><xsl:apply-templates/></div>
+    </p>
+  </xsl:template>
+
   <!--head with attributes-->
   <xsl:template match="tei:head">
       <head>
@@ -54,9 +61,7 @@
 
   <!--lb to br-->
   <xsl:template match="tei:lb">
-    <br>
-       <xsl:apply-templates/>
-    </br>
+    <br/><xsl:apply-templates/>
   </xsl:template>
 
   <!-- Fallback: Identität (alles andere wird einfach roh kopieren) -->
