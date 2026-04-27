@@ -24,7 +24,7 @@
     <p><xsl:apply-templates/></p>
   </xsl:template>
 
-  <xsl:template match="tei:text">
+  <xsl:template match="tei:text|tei:body">
     <xsl:apply-templates/>
   </xsl:template>
 
