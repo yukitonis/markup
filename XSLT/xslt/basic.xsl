@@ -21,23 +21,28 @@
 
   <!-- Beispiel: TEI-Absätze werden in HTML-Absätze umgewandelt, der Inhalt wird von anderen Templates weiterverarbeitet -->
   <xsl:template match="tei:p">
-    <p><xsl:apply-templates/></p>
+    <p>
+      <xsl:apply-templates select="@*|node()"/>
+    </p>
   </xsl:template>
 
   <xsl:template match="tei:text|tei:body">
     <xsl:apply-templates/>
   </xsl:template>
 
-  <!--lb to br-->
-  <xsl:template match="tei:lb/">
-    <br>
-  </xsl:template>
 
   <!--div with attributes-->
   <xsl:template match="tei:div">
       <div>
           <xsl:apply-templates select="@*|node()"/>
       </div>
+  </xsl:template>
+  
+  <!--lb to br-->
+  <xsl:template match="tei:lb">
+    <br>
+       <xsl:apply-templates/>
+    </br>
   </xsl:template>
 
   <!-- Fallback: Identität (alles andere wird einfach roh kopieren) -->
