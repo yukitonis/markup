@@ -28,6 +28,18 @@
     <xsl:apply-templates/>
   </xsl:template>
 
+  <!--lb to br-->
+  <xsl:template match="tei:lb/">
+    <br>
+  </xsl:template>
+
+  <!--div with attributes-->
+  <xsl:template match="tei:div">
+      <div>
+          <xsl:apply-templates select="@*|node()"/>
+      </div>
+  </xsl:template>
+
   <!-- Fallback: Identität (alles andere wird einfach roh kopieren) -->
   <xsl:template match="@*|node()">
     <xsl:copy>
