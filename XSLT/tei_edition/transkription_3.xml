@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de-AT">
+  <teiHeader>
+    <fileDesc>
+      <!--(Dateibeschreibung) enthält die vollständige bibliografische Beschreibung einer elektronischen Datei.-->
+      <titleStmt>
+        <!-- (Angaben zum Titel) umfasst Angaben zum Titel eines Werks und zu den für seinen Inhalt Verantwortlichen. -->
+        <title level="m" type="supplied">Entwurf einer provisorischen Verfassung</title>
+        <title level="a">„Renner Entwurf 1918“</title>
+        <author key="gnd:118599739" ref="https://d-nb.info/gnd/118599739">Renner, Karl</author>
+        <respStmt>
+          <resp>basic transcription and encoding</resp>
+          <name>someone</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <!--(Angaben zur Ausgabe) umfasst Angaben, die sich auf eine spezifische Ausgabe eines Textes beziehen -->
+        <edition>Diplomatische Erstkodierung, basierend auf digitalem Faksimile</edition>
+      </editionStmt>
+      <publicationStmt>
+        <!-- (Angaben zur Veröffentlichung) umfasst Angaben zu Veröffentlichung oder Vertrieb eines elektronischen oder sonstigen Textes.-->
+        <publisher>Unveröffentlicht (Forschungstranskript)</publisher>
+        <availability status="restricted">
+          <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 (Transkript/TEI);
+            Bildrechte beim Archiv!</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <repository>AVA, Nachlasssammlung</repository>
+            <collection>E 1731 (Nachlass Renner)</collection>
+            <idno>Mappe 292</idno>
+          </msIdentifier>
+          <msContents>
+            <msItem class="#draft">
+              <title>Entwurf einer provisorischen Verfassung</title>
+              <author>Renner, Karl</author>
+              <note type="summary">Verfassungsentwurf der provisorischen Nationalversammlung
+                (November 1918).</note>
+            </msItem>
+          </msContents>
+          <physDesc>
+            <objectDesc form="leaf">
+              <supportDesc>
+                <support>Papier; einseitig beschrieben.</support>
+                <extent>1 Blatt, 1 Seite beschrieben.</extent>
+                <condition>
+                  <p>Blatt mit Randbeschädigungen; deutliche Feuchte-/Wasserflecken im linken
+                    Mittelbereich; kleine Perforation unten links; leichte Knicke.</p>
+                </condition>
+              </supportDesc>
+              <layoutDesc>
+                <layout columns="1">
+                  <p>Handschriftlicher Entwurf; groß gesetzter Titelkopf mit Unterstreichungen;
+                    Fließtext in einem Block; Abschnittsüberschrift „Erster Titel.“; nachfolgender
+                    Paragraphbeginn „§ 1“ am Seitenende.</p>
+                </layout>
+              </layoutDesc>
+            </objectDesc>
+            <handDesc>
+              <handNote xml:id="h1" medium="ink" script="Latn">
+                <p>Deutsche Kurrentschrift / gemischte deutsche Schreibschrift; dunkle Tinte
+                  (braun‑schwarz), gleichmäßiger Strich; derselbe Schreiber für Kopf und Text
+                  wahrscheinlich.</p>
+              </handNote>
+              <handNote xml:id="h2" medium="pencil" script="Latn">
+                <p>Wahrscheinlich gleicher Schreiber, Revision mit Blei.</p>
+              </handNote>
+            </handDesc>
+          </physDesc>
+          <history>
+            <origin>
+              <origDate when="1918-11">November 1918</origDate>
+              <origPlace key="geonames:2761369" ref="https://www.geonames.org/2761369/vienna.html">
+                Wien</origPlace>
+            </origin>
+          </history>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <!--(Beschreibung der Kodierung) dokumentiert das Verhältnis zwischen dem elektronischen Text und seiner Quelle oder den Quellen, von denen er sich ableitet.-->
+      <projectDesc>
+        <p>Die Kodierung zielt auf eine diplomatische, quellennah präsentierte Transkription mit
+          starker Erfassung textgenetischer Phänomene (Zusätze, Streichungen, Ersetzungen),
+          physischer Merkmale und Layoutbezug.</p>
+      </projectDesc>
+      <editorialDecl>
+        <hyphenation eol="all">
+          <p>Erfolgt vollständig diplomatisch.</p>
+        </hyphenation>
+        <normalization source="none">
+          <p>Keine Normlasierung vorgenommen.</p>
+        </normalization>
+        <correction status="medium">
+          <p>Originale Korrekturen des Schreibers als &lt;add>, &lt;del>, &lt;subst> etc. erfasst</p>
+        </correction>
+        <interpretation>
+          <p>Semantische Markup‑Ergänzungen beschränkt auf Titel, Abschnitte, Paragraphenzeichen.</p>
+        </interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <!-- (Beschreibung des Textprofils) enthält eine detaillierte Beschreibung der
+      nicht-bibliografischen Merkmale des Textes, besonders der verwendeten Sprachen und
+      Subsprachen, der Entstehungsbedingungen eines Textes sowie der Beteiligten und deren
+      Umfeld.-->
+
+      <langUsage>
+        <language ident="de-AT">Deutsch (Österreich)</language>
+      </langUsage>
+      <textClass>
+        <keywords scheme="local">
+          <term>Verfassung</term>
+          <term>Nationalversammlung</term>
+          <term>Präambel</term>
+        </keywords>
+      </textClass>
+    </profileDesc>
+    <revisionDesc>
+      <!--(Beschreibung der Dateihistorie) dokumentiert die Änderungen, die an der Datei vorgenommen wurden.-->
+      <change when="2026-03-11">Erstfassung der TEI‑Kodierung / Transkription aus Faksimile</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="f1v" n="1">
+      <graphic url="path/to/faksimile.jpg" />
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <pb xml:id="f1v" n="1" facs="#f1v" />
+      <div type="titleBlock" hand="#h1">
+        <head>
+          <hi>Entwurf</hi>
+          <lb /><hi>einer provisorischen</hi>
+          <lb /><hi>Verfassung</hi>. </head>
+      </div>
+      <div hand="#h1">
+        <p>Wir freigewählte<add>n</add> Abgeordnete<add>n</add>, Kraft des allge 
+          <lb break="yes"/>meinen und gleichen Stimmrechts zur Zeit 
+          <lb />allein befugte<add>n</add> <add place="above">und gesetzlichen</add> Vertreter des deutschen Volkes 
+          <lb />der bisherigen im Reichsrat vertretenen 
+          <lb />Königreiche und Länder der Oester
+          <lb break="yes"/>reichisch-Ungarischen Monarchie 
+          <lb />haben uns infolge der allgemeinen Auflösung
+          <lb />des Staates und der völligen <subst><del>Unfruc<supplied reason="abort">chtbarkeit</supplied> </del><add>Unhaltbarkeit</add></subst>
+          <lb />seiner Verfassung<subst>
+            <add>,</add>
+            <del>und</del>
+          </subst> nachdem sich alle übrigen 
+          <lb />Nationen der Monarchie von dem bisherigen <add>,</add> auf 
+          <lb />der pragmatischen Sanktion ruhenden Länder
+          <lb break="yes"/>verbande losgesagt haben<add>,</add> und da <del hand="#h2">da</del> unser
+          <lb />Volk auf sich selbst und allein angewiesen 
+          <lb />ist, in der Not des Krieges zu einer provi
+          <lb break="yes"/>sorischen Nationalversammlung zusam
+          <lb break="yes"/>menge<subst><del>schlossen</del><add>tan</add></subst> und für unser Volk
+          <lb/>und Land die nachstehende provisorische 
+          <lb/>Verfassung beschlossen:
+        </p>
+      </div>
+      <div type="section">
+        <head hand="#h1">Erster Titel.
+        </head>
+        <head type="sub">
+          <seg hand="#h3">Vom</seg>
+          <seg hand="#h1">Namen, Wesen und <subst>
+              <del>Wappen</del>
+              <add>Zeichen</add>
+            </subst>
+          </seg>
+          <lb />
+          <seg hand="#h3">des Staates.</seg>
+        </head>
+      </div>
+      <div type="paragraph">
+        <head type="para">§1.</head>
+        <p>
+          Die Angehörigen des deutschen Volkes,
+          <lb />welche in einem Teile der Oesterreich<add>isch</add>-Ungarischen Monarchie
+          <gap reason="pageBreak"/>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -24,6 +24,10 @@
     <p><xsl:apply-templates/></p>
   </xsl:template>
 
+  <xsl:template match="tei:text">
+    <xsl:apply-templates/>
+  </xsl:template>
+
   <!-- Fallback: Identität (alles andere wird einfach roh kopieren) -->
   <xsl:template match="@*|node()">
     <xsl:copy>

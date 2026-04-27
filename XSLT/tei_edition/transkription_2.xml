@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+  href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+  type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Entwurf einer provisorischen Verfassung</title>
+                <author>Karl Renner</author>
+            </titleStmt>
+            <publicationStmt>
+                <p>Transkription eines handschriftlichen Entwurfs mit Korrekturen,
+          bereitgestellt im Rahmen einer DH-Lehrveranstaltung.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier />
+                    <msContents>
+                        <summary>
+                            Handschriftlicher Entwurf einer provisorischen Verfassung
+                            Österreichs, verfasst von Karl Renner, vermutlich Oktober 1918.
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="leaf">
+                            <supportDesc>
+                                <support>
+                                    Vorderseite eines gefalteten Blattes, ca. 29,6 x 18,16 cm.
+                                </support>
+                                <condition>
+                                    Sichtbare Flecken auf dem Blatt, kleinere Einrisse im Papier
+                                    links.
+                                </condition>
+                            </supportDesc>
+                        </objectDesc>
+                        <handDesc hands="4">
+                            <handNote xml:id="h1" script="latin" scope="major">
+                                Lateinische Schreibschrift; verwendet im Titel und in den ersten
+                                Zeilen der Präambel bis einschließlich "Monarchie" (Zeile 6).
+                                Schriftzüge größer und aufrechter.
+                            </handNote>
+                            <handNote xml:id="h2" script="latin" scope="major">
+                                Lateinische Schreibschrift mit stärker geneigten Zügen
+                                ab "haben uns infolge der..." (Zeile 7 der Präambel).
+                            </handNote>
+                            <handNote xml:id="h3" script="kurrent" scope="minor">
+                                Kurrentschrift; ab § 1.
+                            </handNote>
+                            <handNote xml:id="h4" scope="minor">
+                                Möglicherweise anderer Stift oder andere Hand; erkennbar an der
+                                Durchstreichung des zweiten "da" (Zeile 12 der Präambel), was auf
+                                einen Verdopplungsfehler beim Abschreiben hindeutet.
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origDate notBefore="1918-10-01" notAfter="1918-11-12">
+                                Vermutlich Oktober 1918, vor der Proklamation der Republik
+                                Österreich am 12. November 1918.
+                            </origDate>
+                            <origPlace>Wien</origPlace>
+                        </origin>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <facsimile>
+        <surface xml:id="surf-r" n="r" />
+    </facsimile>
+
+    <text>
+        <body>
+
+            <pb n="r" facs="#surf-r" />
+
+            <!-- Titelbereich -->
+            <div type="title">
+                <head hand="#h1" rend="center underline">
+                    <lb n="1" />Entwurf <lb n="2" />einer provisorischen <lb n="3" />Verfassung. </head>
+            </div>
+
+            <!-- Präambel -->
+            <div type="preamble">
+                <p hand="#h1">
+          <lb n="1"/>Wir freigewählten Abgeordneten, Kraft des allge=
+          <lb n="2"/>meinen und gleichen Stimmrechts zur Zeit
+          <lb n="3"/>allein befugten <add place="above">und gesetzlichen</add> Vertreter des deutschen Volkes
+          <lb n="4"/>der bisherigen im Reichsrat vertretenen
+          <lb n="5"/>Königreiche und Länder der Oester=
+          <lb n="6"/>reichisch-Ungarischen Monarchie
+        </p>
+                <p hand="#h2" rend="indent">
+          <lb n="7"/>haben uns infolge der allgemeinen Auflösung
+          <lb n="8"/>des Staates und der völligen
+          <subst>
+            <del><unclear reason="illegible">Unfruc</unclear></del>
+            <add>Unhaltbarkeit</add>
+          </subst>
+          <lb n="9"/>seiner Verfassung, <del>und</del> nachdem sich alle übrigen
+          <lb n="10"/>Nationen der Monarchie von dem bisherigen, auf
+          <lb n="11"/>der pragmatischen Sanktion ruhenden Länder=
+          <lb n="12"/>verbande losgesagt haben, und da <del hand="#h4">da</del> unser
+          <lb n="13"/>Volk auf sich selbst und allein angewiesen
+          <lb n="14"/>ist, in der Not des Krieges zu einer provi-
+          <lb n="15"/>sorischen Nationalversammlung zusam=
+          <lb n="16"/>menge<subst>
+            <del>schlossen</del>
+            <add>tan</add>
+          </subst> und für unser Volk
+          <lb n="17"/>und Land die nachstehende provisorische
+          <lb n="18"/>Verfassung beschlossen:
+        </p>
+            </div>
+
+            <!-- Erster Titel -->
+            <div type="section" n="1">
+                <head hand="#h3" rend="center underline">Erster Titel.</head>
+                <head type="sub" hand="#h3" rend="center">
+                    <lb n="1" />Vom Namen, Wesen und <subst>
+                        <del>Wappen</del>
+                        <add place="above">Zeichen</add>
+                    </subst>
+          <lb n="2" />des
+                    Staates. </head>
+
+                <div type="paragraph" n="1">
+                    <head hand="#h3" rend="center">§ 1.</head>
+                    <p hand="#h3">
+            <lb n="1"/>Die
+            <subst>
+              <del><unclear reason="illegible">Zugeho</unclear></del>
+              <add>Angehörigen</add>
+            </subst>
+            des deutschen Volkes,
+            <lb n="2"/>welche in einem Teile der Oesterreichisch=Ungarischen Monarchie
+                        <!-- Ende des überlieferten Fragments -->
+          </p>
+                </div>
+
+            </div>
+
+        </body>
+    </text>
+</TEI>

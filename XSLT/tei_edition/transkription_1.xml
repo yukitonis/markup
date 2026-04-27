@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng"
+type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI version="3.3.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Renner Verfassungsentwurf</title>
+        <author>Karl Renner</author>
+      </titleStmt>
+      <publicationStmt>
+        <publisher></publisher>
+        <date>1919</date>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Signatur</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <handNotes>
+        <handNote xml:id="InkhandRound" scribe="XX" script="Lateinschrift" medium="Tinte" scope="major"></handNote>
+        <handNote xml:id="InkhandKurrent" scribe="XX" script="Kurrentschrift" medium="Tinte" scope="minor"></handNote>
+      </handNotes>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="section">
+        <head rend="center large underline">Entwurf<lb/>einer provisorischen<lb/>Verfassung.</head>
+        <p rend="center large">Wir freigewählten Abgeordneten, Kraft des allge-<lb/>meinen und gleichen Stimmrechts zur Zeit<lb/>allein befugten <add place="above">und gesetzlichen</add> Vertreter des deutschen Volkes<lb/>der bisherigen im Reichsrat vertretenen<lb/>Königreiche und Länder der Oester-<lb/>reichisch-Ungarischen Monarchie</p>
+        <p rend="left indent">Haben uns infolge der allgemeinen Auflösung<lb/>des Staates und der völligen <del rend="strikethrough"><unclear reason="illegible">Unfr</unclear></del> Unhaltbarkeit<lb/>seiner Verfassung, <add place="inline">,</add><del rend="overstrike">und</del> nachdem sich alle übrigen<lb/>Nationen der Monarchie von dem bisherigen, auf<lb/>der pragmatischen Sanktion ruhenden Länder-<lb/>verbande losgesagt haben, und da <del rend="strikethrough pencil">da</del>unser<lb/>Volk auf sich selbst und allein angewiesen<lb/>ist, in der Not des Krieges zu einer provi-<lb/>sorischen Nationalversammlung zusam-<lb/>men <del rend="overstrike">schlossen</del><add place="inline">tan</add> und für unser Volk<lb/>und Land die nachstehende provisorische<lb/>Verfassung beschlossen:</p>
+      
+        <div type="subsection">
+          <head rend="center large underline">Erster Titel.</head>
+          <p rend="center">Vom Namen, Wesen und <del rend="strikethrough">Wappen</del><add place="above">Zeichen</add><lb/>des Staates.
+          <lb/>§i.</p>
+          <p rend="left indent">
+            <handShift new="#InkhandKurrent"/>
+            die <del rend="strikethrough">Zugeho</del> Angehörigen des deutschen Volkes,<lb/>
+            welche in <add place="below">einem Teile</add>der 
+            <handShift new="#InkhandRound"/>Oesterreich<add place="below">isch</add>-Ungarischen Monarchie
+          </p>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
